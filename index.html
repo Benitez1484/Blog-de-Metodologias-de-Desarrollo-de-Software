@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologías de Desarrollo de Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="umg.png" alt="Logo del Blog" class="logo">
+        <div>
+            <h1>Metodologías de Desarrollo de Software</h1>
+            <p>Explorando las mejores prácticas y enfoques en el desarrollo de software.</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#metodologias">Metodologías</a></li>
+            <li><a href="#ventajas-desventajas">Ventajas y Desventajas</a></li>
+            <li><a href="#ejemplos">Ejemplos</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#curso">Datos del Curso</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>Las metodologías de desarrollo de software son enfoques estructurados utilizados para planificar, diseñar, implementar, probar y mantener sistemas informáticos. Estas metodologías han evolucionado con el tiempo para adaptarse a las necesidades del mercado y mejorar la eficiencia en la entrega de productos de software de calidad. La elección de una metodología adecuada depende de diversos factores, como el tipo de proyecto, el tiempo disponible, los recursos y la complejidad del sistema a desarrollar (Beck et al., 2001).</p>
+        </section>
+        
+        <section id="metodologias">
+            <h2>Principales Metodologías</h2>
+            <article>
+                <h3>1. Cascada</h3>
+                <p>Modelo secuencial en el que cada fase del desarrollo debe completarse antes de pasar a la siguiente. Este método es uno de los más antiguos y sigue un enfoque lineal donde cada etapa produce resultados específicos que sirven como entrada para la siguiente fase (Pressman, 2021).</p>
+            </article>
+            <article>
+                <h3>2. Desarrollo en Espiral</h3>
+                <p>Modelo iterativo que combina elementos del modelo cascada con prototipado y evaluación de riesgos. Según Sommerville (2019), este enfoque permite abordar gradualmente proyectos complejos a través de ciclos sucesivos.</p>
+            </article>
+            <article>
+                <h3>3. Modelo V</h3>
+                <p>Expansión del modelo en cascada donde las fases de verificación y validación están relacionadas directamente con cada fase del desarrollo. Este modelo enfatiza la importancia de las pruebas en cada etapa del ciclo de vida del software (IEEE, 2020).</p>
+            </article>
+            <article>
+                <h3>4. Metodologías Ágiles (Scrum, Kanban, XP)</h3>
+                <p>Enfoque iterativo e incremental que promueve la entrega rápida de software funcional con la colaboración de los clientes. Schwaber y Sutherland (2020) describen Scrum como un marco de trabajo que permite abordar problemas complejos mientras se entrega valor de manera productiva y creativa.</p>
+            </article>
+        </section>
+        <section id="ventajas-desventajas">
+            <h2>Ventajas y Desventajas</h2>
+            <div class="benefits-container">
+                <div class="benefits">
+                    <h3>Ventajas</h3>
+                    <ul>
+                        <li>Estructuran el proceso de desarrollo de software, facilitando su organización.</li>
+                        <li>Mejoran la eficiencia en la entrega de productos.</li>
+                        <li>Permiten definir objetivos y planificar recursos adecuadamente.</li>
+                        <li>Algunas metodologías ofrecen flexibilidad ante cambios en los requisitos.</li>
+                        <li>Facilitan la colaboración entre equipos y con los clientes.</li>
+                    </ul>
+                </div>
+                <div class="drawbacks">
+                    <h3>Desventajas</h3>
+                    <ul>
+                        <li>Algunas metodologías pueden ser rígidas y dificultar la adaptación a cambios.</li>
+                        <li>La implementación de ciertos modelos puede requerir una alta inversión de tiempo y recursos.</li>
+                        <li>No todas las metodologías son adecuadas para todos los tipos de proyectos.</li>
+                        <li>Puede existir una curva de aprendizaje en la adopción de nuevas metodologías.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ejemplos">
+            <h2>Ejemplo Práctico</h2>
+            <p>Para ilustrar cómo funciona una metodología ágil en la práctica, se considerará el desarrollo de un Sistema de Inventario para una Empresa de Construcción utilizando Scrum (Schwaber & Sutherland, 2020).</p>
+            <button id="toggleExample" class="btn">Mostrar más detalles</button>
+        
+            <div id="extraExample" class="hidden">
+                <h3>Paso 1: Formación del Equipo Scrum</h3>
+                <p>El equipo está compuesto por:</p>
+                <ul>
+                    <li><strong>Product Owner:</strong> Define los requerimientos del cliente.</li>
+                    <li><strong>Scrum Master:</strong> Facilita el proceso y elimina impedimentos.</li>
+                    <li><strong>Equipo de Desarrollo:</strong> Diseña, programa y prueba el sistema.</li>
+                </ul>
+        
+                <h3>Paso 2: Creación del Product Backlog</h3>
+                <p>Se identifican los requerimientos clave del sistema, como:</p>
+                <ul>
+                    <li>Registro de materiales y herramientas.</li>
+                    <li>Generación de reportes automáticos.</li>
+                    <li>Control de entradas y salidas de inventario.</li>
+                    <li>Implementación de códigos QR para rastreo de herramientas.</li>
+                </ul>
+        
+                <h3>Paso 3: Planificación del Sprint</h3>
+                <p>Se seleccionan tareas del backlog para ser desarrolladas en un Sprint de 2 semanas:</p>
+                <ul>
+                    <li>Diseño de la base de datos.</li>
+                    <li>Implementación de una API para gestionar el inventario.</li>
+                    <li>Creación de una interfaz básica.</li>
+                </ul>
+        
+                <h3>Paso 4: Desarrollo e Implementación</h3>
+                <p>Durante el sprint, se realizan reuniones diarias (Daily Scrum) para revisar el progreso y resolver problemas.</p>
+        
+                <h3>Paso 5: Revisión y Retroalimentación</h3>
+                <p>Al finalizar el sprint, se realiza una demo del sistema al cliente, quien da su retroalimentación para mejorar el siguiente ciclo de desarrollo.</p>
+        
+                <h3>Paso 6: Siguientes Iteraciones</h3>
+                <p>El proceso se repite con mejoras en cada iteración hasta obtener un producto final satisfactorio.</p>
+        
+                <h3>Resumen</h3>
+                <p>Las metodologías de desarrollo de software permiten estructurar y optimizar la creación de aplicaciones. En este ejemplo práctico, se aplicó Scrum en el desarrollo de un Sistema de Inventario para una Empresa de Construcción, demostrando la eficiencia del modelo ágil en la entrega rápida de un software funcional.</p>
+            </div>
+        </section>
+        
+        
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <ul>
+                <li>Beck, K., Beedle, M., van Bennekum, A., Cockburn, A., Cunningham, W., Fowler, M., Grenning, J., Highsmith, J., Hunt, A., Jeffries, R., Kern, J., Marick, B., Martin, R. C., Mellor, S., Schwaber, K., Sutherland, J., & Thomas, D. (2001). <em>Manifesto for Agile Software Development</em>. Agile Alliance.</li>
+                <li>IEEE. (2020). <em>Software Engineering Standards</em>. IEEE Xplore. https://ieeexplore.ieee.org/</li>
+                <li>Pressman, R. S. (2021). <em>Ingeniería del software: Un enfoque práctico</em> (9ª ed.). McGraw-Hill.</li>
+                <li>Schwaber, K., & Sutherland, J. (2020). <em>The Scrum Guide</em>. Scrum.org. https://www.scrumguides.org/</li>
+                <li>Sommerville, I. (2019). <em>Software Engineering</em> (10ª ed.). Pearson.</li>
+            </ul>
+        </section>
+        
+        <section id="curso">
+            <h2>Datos del Curso</h2>
+            <p><strong>CURSO:</strong> INGENIERÍA DE SOFTWARE </p>
+            <p><strong>INSTRUCTOR:</strong> INGE. CARLOS AUGUSTO GODÍNEZ GUZMÁN</p>
+            <p><strong>INSTITUCIÓN:</strong> Universidad Mariano Gálvez de Guatemala</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Creado por: Santos Benitez Santiago Simón Hernández <-> 2290 21 9304</p>
+    </footer>
+</body>
+</html>
